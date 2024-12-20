@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@import "/src/Vars.scss";
+
+html {
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background-color: $colorLightGray;
+}
+
+section {
+    // padding-top: 150px;
+    // padding-top: clamp(2.188rem, -0.338rem + 10.36vw, 9.375rem);
+    padding: clamp(1.25rem, 0.042rem + 4.95vw, 4.688rem) 0;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+p {
+    // font-size: 24px;
+    font-size: clamp(0.75rem, 0.486rem + 1.08vw, 1.5rem);
+    line-height: 1.4;
+    color: #000;
+}

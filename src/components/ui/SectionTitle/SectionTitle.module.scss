@@ -1,0 +1,17 @@
+@import "/src/Vars.scss";
+
+.title {
+    // margin-bottom: 60px;
+    margin-bottom: clamp(0.938rem, -0.051rem + 4.05vw, 3.75rem);
+    text-transform: uppercase;
+
+    // font-size: 100px;
+    font-size: clamp(1.75rem, 0.169rem + 6.49vw, 6.25rem);
+    font-weight: 700;
+    line-height: 0.9;
+
+    color: $colorBlueDark;
+    span {
+        color: $colorBlueLight;
+    }
+}
