@@ -1,0 +1,59 @@
+@import "/src/Vars.scss";
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    // gap: 30px;
+    gap: clamp(0.938rem, 0.608rem + 1.35vw, 1.875rem);
+
+    // margin: 80px 0;
+    margin-top: clamp(1.563rem, 0.355rem + 4.95vw, 5rem);
+
+    .title {
+        max-width: 700px;
+    }
+}
+
+.inner {
+    display: flex;
+
+    // gap: 50px;
+    gap: clamp(0.938rem, 0.279rem + 2.7vw, 2.813rem);
+
+    align-items: center;
+
+    div {
+        // padding: 40px 40px 40px 0;
+            padding: clamp(1.063rem, 0.557rem + 2.07vw, 2.5rem);
+            padding-left: 0;
+        border-right: 1px solid $colorBlueLight;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+            // font-size: 40px;
+            font-size: clamp(0.813rem, 0.22rem + 2.43vw, 2.5rem);
+            font-weight: 600;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            // font-size: 26px;
+            font-size: clamp(0.563rem, 0.189rem + 1.53vw, 1.625rem);
+            line-height: 1.2;
+
+            white-space: nowrap;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+
+}

@@ -1,0 +1,26 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    // margin-top: 30px;
+    margin-top: clamp(0.938rem, 0.608rem + 1.35vw, 1.875rem);
+
+    h3 {
+        // font-size: 40px;
+        font-size: clamp(1.125rem, 0.642rem + 1.98vw, 2.5rem);
+        line-height: 1.3;
+        font-weight: 500;
+        // margin-bottom: 20px;
+        margin-bottom: clamp(0.75rem, 0.574rem + 0.72vw, 1.25rem);
+    }
+
+    button {
+        margin-top: 20px;
+
+        @media (max-width: 480px) {
+            order: -1;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+    }
+}

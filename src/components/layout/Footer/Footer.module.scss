@@ -15,7 +15,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 
-    align-items: center;
+    // align-items: center;
 
     @media (max-width: 480px) {
       grid-template-columns: 1fr 1fr;
@@ -29,6 +29,7 @@
 }
 
 .phone {
+    align-self: center;
     font-weight: 500;
     // font-size: 80px;
     // font-size: clamp(0.938rem, -0.49rem + 5.86vw, 5rem);

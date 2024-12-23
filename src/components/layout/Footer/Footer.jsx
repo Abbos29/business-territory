@@ -6,22 +6,22 @@ const Footer = () => {
         <section className={s.footer}>
             <div className="container">
                 <div className={s.wrap}>
-                    <a className={s.phone} href="">+7 (910) 428 41 22</a>
+                    <a className={s.phone} href='tel:89959298173'>8-995-929-8173</a>
+
 
                     <div className={s.menu}>
                         <p>МЕНЮ</p>
-                        <Link to="/">О КОМПАНИИ</Link>
-                        <Link to="/">НАШИ УСЛУГИ</Link>
-                        <Link to="/">НАШИ УСЛУГИ</Link>
+                        <Link to="/about">О КОМПАНИИ</Link>
+                        <Link to="/services">НАШИ УСЛУГИ</Link>
                     </div>
 
                     <div className={s.menu}>
                         <p>КАК НАС НАЙТИ</p>
-                        <Link to="/">Москва, улица Южнопортовая, 5</Link>
-                        <Link to="/">09:00-19:00</Link>
+                        <a target='_blank' href="https://yandex.uz/maps/-/CHQiBJJ8">Офис: г. Липецк, ул. Угловая, 11, офис 28</a>
+                        <a href="">09:00-19:00</a>
                     </div>
                 </div>
-                
+
                 <h3 className={s.title}>ТЕРРИТОРИЯ БИЗНЕСА</h3>
             </div>
         </section>

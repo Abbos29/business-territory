@@ -9,10 +9,12 @@ import './Reset.scss'
 import './App.scss'
 import Header from './components/layout/Header/Header'
 import Footer from './components/layout/Footer/Footer'
+import ScrollToTop from './components/ui/ScrollToTop/ScrollToTop'
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -21,7 +23,7 @@ const App = () => {
         <Route path='/contacts' element={<ContactsPage />} />
 
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   )
 }

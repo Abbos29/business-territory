@@ -17,7 +17,8 @@ const ContactsWrap = () => {
                                 <h3>Готовы начать? Оставьте заявку</h3>
 
                                 <input type="text" placeholder='Ваше имя' />
-                                <input type="text" placeholder='*' />
+                                
+                                <input type="text" placeholder='Ваш номер телефона' />
 
                                 <button>получить консультацию</button>
                             </form>

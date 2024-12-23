@@ -24,17 +24,21 @@ const Header = () => {
             </div>
 
             <div className={s.box}>
-              <a className={s.tel} href="tel:+79209209292">
+              <a className={s.tel} href="tel:89959298173">
                 <img src="/icon-tel.svg" alt="icon" />
-                + 7 920 920 92 92
+                8-995-929-8173
+
               </a>
 
-              <a href="">
+              <a target='_blank' href="https://t.me/buhgalter_48">
                 <img src="/icon-tg.svg" alt="icon" />
               </a>
 
-              <a href="">
+              {/* <a href="">
                 <img src="/icon-wapp.svg" alt="icon" />
+              </a> */}
+              <a target='_blank' href="https://vk.com/1cbo_business">
+                <img src="https://cdn-icons-png.freepik.com/256/3670/3670254.png?semt=ais_hybrid" alt="icon" />
               </a>
             </div>
 
