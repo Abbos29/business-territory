@@ -33,6 +33,19 @@
         flex-direction: column;
         gap: 10px;
 
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            margin-top: 7px;
+        }
+        img {
+            width: 30px;
+        }
+
         h3 {
             // font-size: 40px;
             font-size: clamp(0.813rem, 0.22rem + 2.43vw, 2.5rem);

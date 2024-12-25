@@ -12,7 +12,7 @@ const Hero4 = () => {
                     <div className={s.wrap}>
                         <div className={s.title}>
 
-                        <SectionTitle title='КАК С НАМИ' span='СВЯЗАТЬСЯ' />
+                            <SectionTitle title='КАК С НАМИ' span='СВЯЗАТЬСЯ' />
                         </div>
 
                         <div className={s.inner}>
@@ -34,9 +34,16 @@ const Hero4 = () => {
                             <div>
                                 <h3>Соц.сети</h3>
                                 {/* <a target='_blank' href="https://wa.me/89959298173">WhatsApp</a> */}
-                                <a target='_blank' href="https://vk.com/1cbo_business">Vkontakte</a>
-                                <a target='_blank' href="https://t.me/buhgalter_48">Telegram</a>
-                                 
+                                <div className={s.flex}>
+                                    <a target='_blank' href="https://vk.com/1cbo_business">
+                                        <img src="https://cdn-icons-png.freepik.com/256/3670/3670254.png?semt=ais_hybrid" alt="" />
+                                    </a>
+                                    <a target='_blank' href="https://t.me/buhgalter_48">
+                                        <img src="/icon-tg.svg" alt="" />
+                                    </a>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

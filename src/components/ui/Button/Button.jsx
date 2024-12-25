@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import s from './Button.module.scss';
 import { sendToTelegram } from '../../../utils/telegram';
 
-const Button = ({ children }) => {
+const Button = ({ children, align }) => {
     const [formData, setFormData] = useState({ name: '', phone: '' });
     const [success, setSuccess] = useState(false);
     const [isActive, setIsActive] = useState(false); // состояние для открытия модалки
@@ -35,7 +35,7 @@ const Button = ({ children }) => {
 
     return (
         <>
-            <button className={s.btn} onClick={openModal}>
+            <button className={s.btn} onClick={openModal} style={{ alignSelf: align }}>
                 {children}
             </button>
 
