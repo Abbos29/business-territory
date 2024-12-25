@@ -17,18 +17,18 @@
     }
 
     @media (max-width: 768px) {
-    //   gap: 0;
-      background-color: $colorBlue;
-      padding: 25px;
-      border-radius: 20px;
+        //   gap: 0;
+        background-color: $colorBlue;
+        padding: 25px;
+        border-radius: 20px;
 
-      .box {
-        padding: 0;
-      }
+        .box {
+            padding: 0;
+        }
 
-      h3 {
-        display: block;
-      }
+        h3 {
+            display: block;
+        }
     }
 }
 
@@ -40,66 +40,86 @@
     // border-radius: 50px;
     border-radius: clamp(1.25rem, 0.591rem + 2.7vw, 3.125rem);
 
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    h3 {
+        // font-size: 74px;
+        font-size: clamp(1.625rem, 0.571rem + 3.32vw, 3.625rem);
+        font-weight: 600;
+        color: #fff;
+        // margin-bottom: 60px;
+        margin-bottom: clamp(1rem, 0.253rem + 2.66vw, 2.75rem);
 
-        h3 {
-            // font-size: 74px;
-            font-size: clamp(1.625rem, 0.571rem + 4.32vw, 4.625rem);
-            font-weight: 600;
-            color: #fff;
-            // margin-bottom: 60px;
-            margin-bottom: clamp(1rem, 0.253rem + 3.06vw, 3.125rem);
-
-            @media (max-width: 768px) {
-                display: none;
-              
-            }
-        }
-        input {
-            border: none;
-            border-bottom: 1px solid #fff;
-            // padding: 20px 0;
-            padding: clamp(0.5rem, 0.236rem + 1.08vw, 1.25rem) 0;
-            background-color: transparent;
-
-            color: #fff;
-            // font-size: 32px;
-            font-size: clamp(0.75rem, 0.311rem + 1.8vw, 2rem);
-            font-weight: 500;
-
-            &:focus {
-                outline: none;
-            }
-
-            &::placeholder {
-                color: #fff;
-            }
-        }
-
-        button {
-            cursor: pointer;
-            background-color: #fff;
-            color: #000;
-            text-transform: uppercase;
-            // font-size: 34px;
-            font-size: clamp(0.5rem, -0.071rem + 2.34vw, 2.125rem);
-            font-weight: 700;
-            // padding: 28px;
-            padding: clamp(0.5rem, 0.061rem + 1.8vw, 1.75rem);
-            border: none;
-            // margin-top: 40px;
-            margin-top: clamp(0.313rem, -0.346rem + 2.7vw, 2.188rem);
-            // border-radius: 26px;
-            border-radius: clamp(0.625rem, 0.274rem + 1.44vw, 1.625rem);
-            width: 100%;
-
-            transition: background-color 0.3s;
-            &:hover {
-                background-color: #F1F1F1;
-            }
+        @media (max-width: 768px) {
+            display: none;
         }
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  
+    input {
+        border: none;
+        border-bottom: 1px solid #fff;
+        // padding: 20px 0;
+        padding: clamp(0.5rem, 0.236rem + 1.08vw, 1.05rem) 0;
+        background-color: transparent;
+
+        color: #fff;
+        // font-size: 32px;
+        font-size: clamp(0.75rem, 0.311rem + 1.2vw, 2.2rem);
+        font-weight: 500;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    button,
+    b {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        text-transform: uppercase;
+        // font-size: 34px;
+        font-size: clamp(0.5rem, -0.071rem + 1.34vw, 2.125rem);
+        font-weight: 700;
+        // padding: 28px;
+        padding: clamp(0.5rem, 0.061rem + 1.2vw, 1.45rem);
+        border: none;
+        // margin-top: 40px;
+        margin-top: clamp(0.313rem, -0.346rem + 2.7vw, 2.188rem);
+        // border-radius: 26px;
+        border-radius: clamp(0.625rem, 0.274rem + 1.44vw, 1.625rem);
+        width: 100%;
+
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}
+
+.thankYouButton {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    // font-size: 34px;
+    font-size: clamp(0.5rem, -0.071rem + 2.34vw, 2.125rem);
+    font-weight: 700;
+    // padding: 28px;
+    padding: clamp(0.5rem, 0.061rem + 1.8vw, 1.75rem);
+    border: none;
+    // margin-top: 40px;
+    margin-top: clamp(0.313rem, -0.346rem + 2.7vw, 2.188rem);
+    // border-radius: 26px;
+    border-radius: clamp(0.625rem, 0.274rem + 1.44vw, 1.625rem);
+    width: 100%;
 }

@@ -55,6 +55,9 @@
     justify-content: space-between;
 
     color: #000;
+    text-decoration: none;
+
+    transition: 0.4s;
 
     h3 {
         // font-size: 36px;
@@ -63,7 +66,7 @@
         line-height: 1;
     }
 
-    a {
+    div {
         // width: 70px;
         // height: 70px;
         width: clamp(1.875rem, 0.997rem + 3.6vw, 4.375rem);
@@ -93,13 +96,13 @@
         }
     }
 
-    &.blue {
+    &:hover {
         color: #fff;
         background-color: $colorBlue;
 
-        a {
+        div {
             background-color: #fff;
-            border: none;
+            border: 1px solid transparent;
 
             transition: 0.3s;
 

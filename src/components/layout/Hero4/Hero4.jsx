@@ -30,6 +30,14 @@ const Hero4 = () => {
                                 <h3>Адрес</h3>
                                 <a target='_blank' href="https://yandex.uz/maps/-/CHQiBJJ8">Офис: г. Липецк, ул. Угловая, <br /> 11, офис 28</a>
                             </div>
+
+                            <div>
+                                <h3>Соц.сети</h3>
+                                {/* <a target='_blank' href="https://wa.me/89959298173">WhatsApp</a> */}
+                                <a target='_blank' href="https://vk.com/1cbo_business">Vkontakte</a>
+                                <a target='_blank' href="https://t.me/buhgalter_48">Telegram</a>
+                                 
+                            </div>
                         </div>
                     </div>
                 </div>

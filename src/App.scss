@@ -2,6 +2,32 @@
 
 @import "/src/Vars.scss";
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    footer {
+        margin-top: auto;
+    }
+}
+
 html {
     font-family: "Manrope", sans-serif;
 }
@@ -27,4 +53,39 @@ p {
     font-size: clamp(0.75rem, 0.486rem + 1.08vw, 1.5rem);
     line-height: 1.4;
     color: #000;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding-top: 50px;
+
+    h1 {
+        font-size: 90px;
+        font-weight: 600;
+        line-height: 1.1;
+        color: $colorBlue;
+        animation: colorChange 2s infinite;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: $colorBlue;
+    }
+    50% {
+        color: #000;
+    }
+    100% {
+        color: $colorBlue;
+    }
 }

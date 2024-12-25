@@ -34,12 +34,13 @@ const Header = () => {
                 <img src="/icon-tg.svg" alt="icon" />
               </a>
 
-              {/* <a href="">
+              <a target='_blank' href="https://wa.me/89959298173">
                 <img src="/icon-wapp.svg" alt="icon" />
-              </a> */}
-              <a target='_blank' href="https://vk.com/1cbo_business">
-                <img src="https://cdn-icons-png.freepik.com/256/3670/3670254.png?semt=ais_hybrid" alt="icon" />
               </a>
+              
+              {/* <a target='_blank' href="https://vk.com/1cbo_business">
+                <img src="https://cdn-icons-png.freepik.com/256/3670/3670254.png?semt=ais_hybrid" alt="icon" />
+              </a> */}
             </div>
 
             <div onClick={toggleMenu} className={s.burger}>

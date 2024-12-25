@@ -3,7 +3,7 @@ import s from './Footer.module.scss';
 
 const Footer = () => {
     return (
-        <section className={s.footer}>
+        <footer className={s.footer}>
             <div className="container">
                 <div className={s.wrap}>
                     <a className={s.phone} href='tel:89959298173'>8-995-929-8173</a>
@@ -13,6 +13,7 @@ const Footer = () => {
                         <p>МЕНЮ</p>
                         <Link to="/about">О КОМПАНИИ</Link>
                         <Link to="/services">НАШИ УСЛУГИ</Link>
+                        <Link to="/contacts">КОНТАКТЫ</Link>
                     </div>
 
                     <div className={s.menu}>
@@ -24,7 +25,7 @@ const Footer = () => {
 
                 <h3 className={s.title}>ТЕРРИТОРИЯ БИЗНЕСА</h3>
             </div>
-        </section>
+        </footer>
     );
 };
 
