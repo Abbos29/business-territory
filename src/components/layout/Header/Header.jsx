@@ -27,7 +27,6 @@ const Header = () => {
               <a className={s.tel} href="tel:89959298173">
                 <img src="/icon-tel.svg" alt="icon" />
                 8-995-929-8173
-
               </a>
 
               <a target='_blank' href="https://t.me/buhgalter_48">
@@ -37,13 +36,13 @@ const Header = () => {
               <a target='_blank' href="https://wa.me/89959298173">
                 <img src="/icon-wapp.svg" alt="icon" />
               </a>
-              
+
               {/* <a target='_blank' href="https://vk.com/1cbo_business">
                 <img src="https://cdn-icons-png.freepik.com/256/3670/3670254.png?semt=ais_hybrid" alt="icon" />
               </a> */}
             </div>
 
-            <div onClick={toggleMenu} className={s.burger}>
+            <div onClick={toggleMenu} className={`${s.burger} ${isActive ? s.active : null}`}>
               <span></span>
               <span></span>
               <span></span>
