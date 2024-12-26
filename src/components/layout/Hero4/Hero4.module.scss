@@ -1,6 +1,5 @@
 @import "/src/Vars.scss";
 
-
 .wrap {
     display: flex;
     flex-direction: column;
@@ -10,6 +9,7 @@
     // margin: 80px 0;
     margin-top: clamp(1.563rem, 0.355rem + 4.95vw, 5rem);
 
+
     .title {
         max-width: 700px;
     }
@@ -17,6 +17,8 @@
 
 .inner {
     display: flex;
+    flex-wrap: wrap;
+
 
     // gap: 50px;
     gap: clamp(0.938rem, 0.279rem + 2.7vw, 2.813rem);
@@ -25,8 +27,8 @@
 
     div {
         // padding: 40px 40px 40px 0;
-            padding: clamp(1.063rem, 0.557rem + 2.07vw, 2.5rem);
-            padding-left: 0;
+        padding: clamp(1.063rem, 0.557rem + 2.07vw, 2.5rem);
+        padding-left: 0;
         border-right: 1px solid $colorBlueLight;
 
         display: flex;
@@ -40,10 +42,18 @@
             flex-direction: row;
             margin: 0;
             padding: 0;
-            margin-top: 7px;
+            margin-top: 3px;
         }
         img {
-            width: 30px;
+            width: 45px;
+
+            @media (max-width: 768px) {
+                width: 30px;
+            }
+            @media (max-width: 480px) {
+                width: 25px;
+              
+            }
         }
 
         h3 {
@@ -67,6 +77,4 @@
             border: none;
         }
     }
-
-
 }

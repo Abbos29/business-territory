@@ -29,6 +29,8 @@ const HeadSeo = ({ title, description, keywords, author, image, url }) => {
       {/* Дополнительно */}
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="#2D89EF" />
+
+      
     </Helmet>
   );
 };

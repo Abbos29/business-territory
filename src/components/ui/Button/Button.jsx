@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import s from './Button.module.scss';
 import { sendToTelegram } from '../../../utils/telegram';
 
-const Button = ({ children, align }) => {
+const Button = ({ children, align = "center" }) => {
     const [formData, setFormData] = useState({ name: '', phone: '' });
     const [success, setSuccess] = useState(false);
     const [isActive, setIsActive] = useState(false); // состояние для открытия модалки
@@ -27,7 +27,6 @@ const Button = ({ children, align }) => {
     };
 
     const closeModal = (e) => {
-        // Закрыть модалку при клике вне области .box
         if (e.target === e.currentTarget) {
             setIsActive(false);
         }
@@ -54,6 +53,8 @@ const Button = ({ children, align }) => {
                                 placeholder="Ваше имя"
                                 value={formData.name}
                                 onChange={handleChange}
+                                required
+
                             />
                             <input
                                 type="text"
@@ -61,6 +62,8 @@ const Button = ({ children, align }) => {
                                 placeholder="Ваш номер телефона"
                                 value={formData.phone}
                                 onChange={handleChange}
+                                required
+
                             />
                             <button type="submit">ОТПРАВИТЬ</button>
                         </form>

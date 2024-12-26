@@ -9,6 +9,11 @@ const Header = () => {
   const toggleMenu = () => {
     setIsActive(prev => !prev)
   }
+  const closeMenu = () => {
+    setIsActive(false)
+  }
+
+
 
   return (
     <>
@@ -18,9 +23,9 @@ const Header = () => {
             <Link to={'/'} className={s.logo}><img src="/logo.png" alt="logo" /></Link>
 
             <div className={`${s.menu} ${isActive ? s.active : null}`}>
-              <Link to={'/about'}>О компании</Link>
-              <Link to={'/services'}>Наши услуги</Link>
-              <Link to={'/contacts'}>Контакты</Link>
+              <Link onClick={closeMenu} to={'/about'}>О компании</Link>
+              <Link onClick={closeMenu} to={'/services'}>Наши услуги</Link>
+              <Link onClick={closeMenu} to={'/contacts'}>Контакты</Link>
             </div>
 
             <div className={s.box}>
@@ -29,7 +34,7 @@ const Header = () => {
                 8-995-929-8173
               </a>
 
-              <a target='_blank' href="https://t.me/buhgalter_48">
+              <a target='_blank' href="https://t.me/natalia_filonova">
                 <img src="/icon-tg.svg" alt="icon" />
               </a>
 

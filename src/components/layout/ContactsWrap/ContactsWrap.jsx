@@ -41,6 +41,7 @@ const ContactsWrap = () => {
                                     placeholder="Ваше имя"
                                     value={formData.name}
                                     onChange={handleChange}
+                                    required
                                 />
                                 <input
                                     type="text"
@@ -48,6 +49,8 @@ const ContactsWrap = () => {
                                     placeholder="Ваш номер телефона"
                                     value={formData.phone}
                                     onChange={handleChange}
+                                    required
+
                                 />
                                 <button type="submit">Получить консультацию</button>
                             </form>
@@ -55,7 +58,7 @@ const ContactsWrap = () => {
                             <button className={s.thankYouButton}>Спасибо за вашу заявку!</button>
                         )}
                     </div>
-                    <div style={{ borderRadius: '20px', overflow: 'hidden' }}>
+                    <div className={s.map} style={{ borderRadius: '20px', overflow: 'hidden' }}>
                         <YandexMap />
                     </div>
                 </div>
