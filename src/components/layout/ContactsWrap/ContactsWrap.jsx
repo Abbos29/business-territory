@@ -41,12 +41,11 @@ const ContactsWrap = () => {
                                     placeholder="Ваше имя"
                                     value={formData.name}
                                     onChange={handleChange}
-                                    required
                                 />
                                 <input
                                     type="text"
                                     name="phone"
-                                    placeholder="Ваш номер телефона"
+                                    placeholder="Ваш номер телефона *"
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
